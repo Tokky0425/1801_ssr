@@ -1,0 +1,31 @@
+{
+  "name": "1801_ssr",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-loader": "7.1.2",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1",
+    "express": "^4.16.2",
+    "nodemon": "1.12.0",
+    "npm-run-all": "4.1.1",
+    "react": "16.0.0",
+    "react-dom": "16.0.0",
+    "react-router-config": "1.0.0-beta.4",
+    "react-router-dom": "4.2.2",
+    "webpack": "3.5.6",
+    "webpack-merge": "4.1.0",
+    "webpack-node-externals": "1.6.0"
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel dev:*",
+    "dev:server": "nodemon build/bundle.js",
+    "dev:build-server": "webpack --config webpack.server.js --watch",
+    "dev:build-client": "webpack --config webpack.client.js --watch"
+  }
+}

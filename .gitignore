@@ -1,0 +1,26 @@
+# dependencies
+01/node_modules
+02/node_modules
+03/node_modules
+04/node_modules
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+01/npm-debug.log*
+01/yarn-debug.log*
+01/yarn-error.log*
+01/yarn-error.log*
+02/npm-debug.log*
+02/yarn-debug.log*
+02/yarn-error.log*
+03/npm-debug.log*
+03/yarn-debug.log*
+03/yarn-error.log*
+04/npm-debug.log*
+04/yarn-debug.log*
+04/yarn-error.log*
