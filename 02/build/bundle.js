@@ -96,8 +96,6 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var app = (0, _express2.default)();
 
-app.use(_express2.default.static('build'));
-
 app.get('*', function (req, res) {
   (0, _renderer2.default)(req, res);
 });
@@ -176,17 +174,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = function () {
   return _react2.default.createElement(
-    'div',
+    'h1',
     null,
-    _react2.default.createElement(
-      'p',
-      null,
-      '\u3053\u306E\u30C6\u30AD\u30B9\u30C8\u306FJavaScript\u306B\u3088\u3063\u3066\u304B\u304B\u308C\u3066\u3044\u307E\u3059\u3002'
-    )
+    'Hello, SSR!'
   );
 };
 
-// class App extends React.Component {
+// export default class App extends React.Component {
 //   constructor() {
 //     super();
 //     this.state = {
@@ -210,8 +204,6 @@ exports.default = function () {
 //     )
 //   }
 // }
-//
-// export default App;
 
 /***/ })
 /******/ ]);

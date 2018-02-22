@@ -1,12 +1,8 @@
 import React from 'react';
 
-export default () => (
-  <div>
-    <p>このテキストはJavaScriptによってかかれています。</p>
-  </div>
-);
+export default () => <h1>Hello, SSR!</h1>;
 
-// class App extends React.Component {
+// export default class App extends React.Component {
 //   constructor() {
 //     super();
 //     this.state = {
@@ -30,5 +26,3 @@ export default () => (
 //     )
 //   }
 // }
-//
-// export default App;

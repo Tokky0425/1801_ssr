@@ -1,5 +1,5 @@
 const path = require('path');
-// 不要なnode_modulesをバンドルせず、ファイルサイズを小さくして起動を早くする
+// 不要なnode_modulesをバンドルせず、ファイルサイズを小さくする
 const webpackNodeExternals = require('webpack-node-externals');
 
 module.exports = {

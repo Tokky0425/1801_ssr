@@ -5,8 +5,6 @@ import renderer from './renderer';
 
 const app = express();
 
-app.use(express.static('build'));
-
 app.get('*', (req, res) => {
   renderer(req, res);
 });
